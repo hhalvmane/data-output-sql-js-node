@@ -1,14 +1,18 @@
 # data-output-sql-js-node
 
+Програма призначена для виводу даних з таблиць бази PostgreSQL на веб-сторінку у форматі JSON. 
+У  README надані короткі вказівки щодо запуску та використання програми.
+
 Для запуску програми:
+
     1. має бути встановлена PostgreSQL база даних, в ній має міститися база "shop1" з таблицями:
                                             zakazy
             tovary                         {  id_zakaza: int,
             {  id_tovara: int,                id_klienta: int,
                name: VARCHAR[255],            id_tov1: int,
                property1: int,                count_tov1: int,
-               property2: tinyint,            id_tov2: int,
-              price DECIMAL(6,2)              count_tov2: int,
+               property2: smallint,           id_tov2: int,
+              price real                      count_tov2: int,
             }                              }
                                             
     2. для запуску серверу в терміналі потрібно прописати "npm test" (виведуться відповідні повідомлення в консоль)
