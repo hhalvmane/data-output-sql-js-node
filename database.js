@@ -3,11 +3,11 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({ // дані мають бути унікальні - ті, що у вашій базі даних в PostgreSQL
-  user: "postgres",
-  password: "hrefDataBs4",
-  host: "localhost",
-  port: 5432,
-  database: "shop1"
+  user: "your_username",
+  password: "your_password",
+  host: "host_name",
+  port: 5432, // basic
+  database: "shop1" 
 });
 
 // перевірка підключення до бази даних
